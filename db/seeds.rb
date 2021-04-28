@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ruby = Topic.create(name: "Ruby")
+html = Topic.create(name: "HTML")
+css = Topic.create(name: "CSS")
