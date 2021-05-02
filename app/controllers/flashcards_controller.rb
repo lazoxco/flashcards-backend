@@ -20,7 +20,7 @@ class FlashcardsController < ApplicationController
 
   def update 
     flashcard = Flashcard.find(params[:id])
-    if flashcard.updated_at(flashcard_params)
+    if flashcard.update(flashcard_params)
       render json: flashcard.to_json(except: [:created_at, :updated_at], include: {topic: {only: [:name]}})
     else
       render json: {error: "Sorry, something went wrong."}
