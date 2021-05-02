@@ -1,24 +1,10 @@
-# README
+# Flashcards Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About this API
+This API is used to store and retrieve flashcard questions, answers and their related topics.
+This API was built to accompany the Flashcard app built in JavaScript located at this repo:
+https://github.com/lazoxco/flashcards-frontend
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To use this API:
+1. Clone the flashcards-backend repo at: https://github.com/lazoxco/flashcards-backend
+2. Run 'rails s'
