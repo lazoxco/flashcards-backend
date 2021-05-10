@@ -18,15 +18,6 @@ class FlashcardsController < ApplicationController
     end
   end
 
-  def update 
-    flashcard = Flashcard.find(params[:id])
-    if flashcard.update(flashcard_params)
-      render json: flashcard.to_json(except: [:created_at, :updated_at], include: {topic: {only: [:name]}})
-    else
-      render json: {error: "Sorry, something went wrong."}
-    end
-  end
-
   def destroy
     flashcard = Flashcard.find(params[:id])
     flashcard.destroy
